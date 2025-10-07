@@ -1,40 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Timesheet Management App
 
-## Getting Started
+A simple **Timesheet Management** web application built using **Next.js** and **Tailwind CSS**.  
+It allows users to log in, view, and manage their weekly timesheets in an intuitive UI.
 
-First, run the development server:
+---
 
+## 🚀 Setup Instructions
+
+### 1. Clone the repository
 ```bash
+git clone https://github.com/Vishalk135/Timesheet-Management-App.git
+cd Timesheet-Management-App
+
+Install dependencies
+npm install
+
+Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Then open http://localhost:3000 in your browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🔐 Login Details
+| Field        | Value                 |
+| ------------ | --------------------- |
+| **Email**    | `admin@tentwenty.com` |
+| **Password** | `password123`         |
+| **Name**     | `Admin User`          |
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+🧩 Frameworks & Libraries Used
+Next.js
+ — React-based framework for building full-stack web applications.
+Tailwind CSS
+ — Utility-first CSS framework for styling.
+Lucide React
+ — Icon library for modern and elegant icons.
+SWR
+ — Data fetching library for React hooks.
+NextAuth.js
+— Authentication solution for Next.js apps.
+TypeScript — Type-safe development.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+⚙️ Assumptions / Notes
+Authentication is currently mock-based (no backend API).
+Data is stored locally using static files or mock data.
+The app is designed primarily for admin users to manage timesheet entries.
+We can extend this project by integrating an API or database (MongoDB, PostgreSQL, etc.).
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+⏱️ Time Spent
+| Task                                       | Duration       |
+| ------------------------------------------ | -------------- |
+| Project setup (Next.js + Tailwind)         | ~30 mins       |
+| Authentication (mock login)                | ~1 hour        |
+| Timesheet UI design & modal implementation | ~3 hours       |
+| Testing & polishing UI                     | ~1.5 hours     |
+| Documentation (README)                     | ~30 mins       |
+| Total                                      | ~6.5 hours     |
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+💡 Future Enhancements
+Integrate backend (Node.js + MongoDB)
+Add real-time timesheet data storage
+Role-based authentication
+Dashboard analytics and reports
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
